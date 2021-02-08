@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .container {
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+main header {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.color {
+    background-color: var(--background-secundary-color);
+    height: 150px;
+    border-radius: 8px;
+}
+
+.gradient { 
+    background: linear-gradient(var(--background-main-color) 30%, var(--background-secundary-color))
+}
+
+main article {
+    padding: 5px 5px 10px 5px;
+    background-color: var(--text-list);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px -1px #000;
+    margin-bottom: 20px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+tr:nth-child(2n), thead {
+    background-color: var(--text-list);
+}
+
+table {
+    width: 40%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th:nth-child(1), td:nth-child(1){
+    color: #767676;
+}
+
+th:nth-child(2), td:nth-child(2){
+    color: var(--text-faild);
+}
+
+th, td {
+    padding: 5px;
+    color: var(--text-success);
+}
+
+.js {
+    width: 40%;
+    background-color: var(--text-list);
+    box-shadow: 0px 0px 5px -3px var(--text-black);
+}
+
+.content {
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.drop img {
+    width: 100px;
+}
+
+.drop.toggle {
+    display: none;
+}
